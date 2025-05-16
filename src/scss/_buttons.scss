@@ -1,0 +1,18 @@
+.main-button{
+    background-color: $terracotta;
+    padding: $space-md $space-lg;
+    font-weight: bold;
+
+    &:hover{
+        background-color: $light-terracotta;
+        color:$terracotta;
+    }
+}
+
+.link-button{
+    font-weight: bold;
+
+    &:hover{
+        text-decoration: underline
+    }
+}

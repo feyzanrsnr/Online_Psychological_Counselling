@@ -1,0 +1,35 @@
+
+/*COLORS*/
+$white:#fff;
+$black:#000;
+
+$khaki: #6B705C;
+$terracotta: #B35C44;
+$cream: #F2E9DC;
+$light-terracotta:#D9A88D;
+$brown:#3E3E3E;
+$blush-pink: #E8C1B0;
+$light-terracotta: lighten($terracotta, 25%);
+$lighter-terracotta:#E6BBA5;
+$peachy	:#F2CEC3;
+$rich-terracotta: darken($terracotta, 8%);
+$deep-blush: darken($blush-pink, 12%);
+
+/*FONT SIZE*/
+$font-sm:0.875rem;
+$font-md:1rem;
+$font-lg:1.25rem;
+$font-xl:1.50rem;
+$font-xxl:2rem;
+$font-3xl:2.5rem;
+
+/*SPACING*/
+$space-xs:4px;
+$space-sm:8px;
+$space-md:16px;
+$space-lg:24px;
+$space-xl:40px;
+
+
+
+

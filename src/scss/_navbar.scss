@@ -1,0 +1,20 @@
+.navbar{
+    position: fixed;
+    width: 100vw;
+    background-color: $khaki;
+    color:$cream;
+    font-size:$font-xl;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: $space-lg;
+    padding-right: $space-lg;
+
+
+    & div{
+        display: flex;
+        gap:$space-xl;
+    }
+
+}

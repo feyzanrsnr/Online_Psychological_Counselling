@@ -1,0 +1,274 @@
+.section{
+    min-height: 100vh;
+    padding: $space-md;
+}
+
+.section-title{
+    font-size: $font-3xl;
+    text-align: center;
+    color: $brown;
+    font-family: "Source Serif 4", serif;
+}
+
+
+/*HOME*/
+/* -------------------------------------- */
+
+/*EXPERTS*/
+.experts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xl;
+    margin-top:$space-lg;
+
+    @media(max-width: 768px){
+        flex-direction: column; 
+        margin-bottom: 200px;   
+    }
+}
+
+.expert{
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    background-color: $khaki;
+//     background-image: linear-gradient(
+//     300deg,
+//     hsl(35deg 46% 91%) 0%,
+//     hsl(41deg 22% 80%) -1%,
+//     hsl(47deg 14% 69%) -2%,
+//     hsl(54deg 10% 59%) 50%,
+//     hsl(64deg 8% 49%) 78%,
+//     hsl(75deg 10% 40%) 100%
+//   );
+// background-image: linear-gradient(
+//     45deg,
+//     hsl(75deg 10% 40%) 0%,
+//     hsl(76deg 10% 38%) 3%,
+//     hsl(77deg 10% 36%) 7%,
+//     hsl(78deg 10% 34%) 12%,
+//     hsl(79deg 10% 32%) 18%,
+//     hsl(80deg 10% 30%) 24%,
+//     hsl(79deg 9% 34%) 33%,
+//     hsl(79deg 8% 39%) 43%,
+//     hsl(78deg 8% 43%) 54%,
+//     hsl(77deg 7% 48%) 64%,
+//     hsl(77deg 7% 53%) 74%,
+//     hsl(77deg 7% 49%) 81%,
+//     hsl(77deg 8% 45%) 87%,
+//     hsl(77deg 8% 42%) 92%,
+//     hsl(77deg 9% 38%) 97%,
+//     hsl(78deg 9% 35%) 100%
+//   );
+    padding: $space-lg;
+    border-radius: 10px;
+    color:$cream;
+    width:370px;
+    height:500px;
+    align-items: center;
+
+    @media(max-width: 768px){
+            width:50%;
+            height:500px;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: $brown;
+        transition: 1s all ease-out;
+    }
+
+    & ul{
+
+        line-height: $space-xl;
+
+
+        & li{
+        font-size: $font-xl;
+        list-style: disc;
+        }
+    }
+
+
+
+}
+
+.avatar{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-color: $cream;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: $font-xxl;
+    font-weight: bold;
+    text-align: center;
+}
+/* -------------------------------------- */
+
+/*OPTIONS*/
+
+.options{
+    display: flex;
+    gap: $space-xl;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+     @media(max-width: 768px){
+        flex-wrap: wrap;
+    }
+
+     @media(max-width: 1350px){
+        flex-wrap: wrap;
+    }
+
+    & .option{
+    width: 300px;
+    height: 300px;
+    // background: $light-terracotta;
+    // background: -webkit-linear-gradient(to right, $terracotta,$light-terracotta);
+    // background: linear-gradient(to right, $terracotta,$light-terracotta);
+    // background: radial-gradient($light-terracotta, $terracotta);
+    // background-color: $light-terracotta;
+
+    // background: linear-gradient( 135deg,
+    // $rich-terracotta 0%,
+    // $terracotta 35%,
+    // $deep-blush 80%);
+    background: linear-gradient(
+    145deg,
+    hsl(13deg 45% 48%) 0%,
+    hsl(15deg 47% 55%) 31%,
+    hsl(18deg 48% 62%) 49%,
+    hsl(21deg 50% 68%) 61%,
+    hsl(21deg 51% 72%) 69%,
+    hsl(20deg 53% 74%) 75%,
+    hsl(20deg 56% 76%) 80%,
+    hsl(20deg 57% 78%) 85%,
+    hsl(18deg 59% 81%) 89%,
+    hsl(16deg 62% 83%) 94%,
+    hsl(14deg 64% 86%) 100%
+    );
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $space-lg;
+
+
+    & p{
+        color: $brown;
+        font-size: $font-xl;
+        font-weight: bold;
+        }
+
+    &:hover{
+
+        // background: linear-gradient(to right,$terracotta, $blush-pink);
+        // transition: 1s;
+        // transform: scale(1.05);
+        background: linear-gradient(135deg,
+        lighten($rich-terracotta, 8%) 0%,
+        lighten($terracotta, 8%) 35%,
+        lighten($deep-blush, 5%) 80%);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+  
+}
+
+
+
+
+/* -------------------------------------- */
+
+
+/*FAQS*/
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+.faqs-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 30px 50px;
+    justify-content: space-between;
+    width: 100%;
+    
+    @media(max-width: 768px){
+        flex-wrap: nowrap;
+        flex-direction: column;
+        min-height: 100vh; 
+        margin-bottom: 100px;
+    }
+}
+
+.question-container{
+    width: calc(50% - 25px); // gap/2 kadar çıkar
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid $brown;
+    box-sizing: border-box;
+
+    @media(max-width: 768px){
+        width: 100%; 
+    }
+}
+
+.question-number{
+    font-size: $font-xl;
+    color: $terracotta;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font-xl;
+    color: $brown;
+}
+
+
+/* -------------------------------------- */
+
+/*FOOTER*/
+
+.footer{
+    background-color: $khaki;
+    color: $cream;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+
+    @media(max-width: 768px){
+        width: 100%;
+        height: 100px;
+    }
+
+    & .text{
+        font-size: $font-md;
+        position: absolute;
+        bottom: 5px;
+    }
+}
+/* -------------------------------------- */
+
