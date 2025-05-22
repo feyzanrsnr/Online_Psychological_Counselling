@@ -2,17 +2,21 @@
     background-color: $terracotta;
     padding: $space-md $space-lg;
     font-weight: bold;
-
+    text-align: center;
+    border-radius: 8px;
+    
     &:hover{
-        background-color: $light-terracotta;
-        color:$terracotta;
+        background-color: $cream;
+        color:$khaki;
     }
 }
 
 .link-button{
     font-weight: bold;
+    font-size: $font-lg;
 
     &:hover{
-        text-decoration: underline
+        text-decoration: underline;
     }
 }
+

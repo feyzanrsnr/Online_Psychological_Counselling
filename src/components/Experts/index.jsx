@@ -1,4 +1,5 @@
 import React from 'react'
+import avatar from '../../assets/images/mid-shot-woman-therapist-with-clipboard.jpg'
 
 function index() {
   return (
@@ -9,25 +10,33 @@ function index() {
         <div className='experts'>
 
           <div className='expert'>
-            <div className='avatar'><img src="" alt="icon" /></div>
-            
-             <p className='title'>Süeda İNAN</p>
+            <div className='avatar'>
+              <img src={avatar} alt="avatar" />
+            </div>
+
+             <div>
+              <p className='title'>Süeda İNAN</p>
             <ul>
               <li>Aile Danışmanlığı</li>
               <li>Kariyer Danışmanlığı</li>
               <li>Manevi Danışmanlık</li>
             </ul>
+             </div>
           </div>
 
           <div className='expert'>
-            <div className='avatar'><img src="" alt="icon" /></div>
+            <div className='avatar'>
+              <img src={avatar} alt="avatar"/>
+            </div>
             
-             <p className='title'>Süeda İNAN</p>
+            <div>
+               <p className='title'>Süeda İNAN</p>
             <ul>
               <li>Aile Danışmanlığı</li>
               <li>Kariyer Danışmanlığı</li>
               <li>Manevi Danışmanlık</li>
             </ul>
+            </div>
           </div>
 
           

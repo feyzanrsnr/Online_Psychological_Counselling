@@ -13,20 +13,35 @@ function index() {
     {
       isOpen ? 
       <div className='sidebar'>
-      <div>
-        <button onClick={() => setIsOpen(!isOpen)}><CloseIcon className='close-icon'/></button>
+
+      <Link className='link-button' to="/">Anasayfaya Dön</Link>
+
+      <CloseIcon onClick={() => setIsOpen(!isOpen)} className='close-icon'/>
+      
+      <Link className='main-button' 
+      to="/expert">
+        Uzmanımı Bul
+      </Link>
+
+      <Link className='main-button ' 
+      to="/therapy">
+        Bana Uygun Destek Türünü Bul
+      </Link>
+
+     <Link
+      className='main-button ' 
+      to="/appointment">
+        Randevu Al
+     </Link>
+        
+      <FaInstagram className='sidebar-icon '
+      size={35} />
+      
       </div>
-      <div> 
-      <button className='link-button' ><Link to="/">Anasayfa</Link>
-      </button>
-      <FaInstagram size={35} />
-      <button className='main-button'><Link to="/expert">Uzmanımı Bul</Link></button>
-      <button className='main-button'><Link to="/therapy">Bana Uygun Destek Türünü Bul</Link></button>
-      <button className='main-button'><Link to="/appointment">Randevu Al</Link></button>
-      </div>
-    </div> 
+
     :
-    <button onClick={() => setIsOpen(!isOpen)}><OpenIcon className='open-icon'/></button>
+
+    <OpenIcon onClick={() => setIsOpen(!isOpen)} className='open-icon'/>
     
     }
     

@@ -1,6 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
+import Randevu from '../../components/Randevu'
+import { Link } from 'react-router'
+import back from '../../assets/icons/chevron_left_24dp_33333_FILL0_wght400_GRAD0_opsz24.svg'
+
 import useBreakpoint
  from '../../hooks/useBreakpoint'
 function AppointmentPage() {
@@ -10,8 +14,8 @@ function AppointmentPage() {
     {
       isMobile ? <Sidebar/> : <Navbar/> 
     }
-
-    
+    <Randevu/>
+    <Link><img src={back}/>Geri Dön</Link>
     </>
   )
 }

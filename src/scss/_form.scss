@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    color: $brown;
+    margin-top: 150px;
+    width: 50%;
+}
+
+.form > input, textarea {
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+    &:focus{
+        background-color: transparent;
+        outline: none;
+        font-size: $font-md;
+    }
+}
+
+.form > label{
+    color: $terracotta;
+    font-weight: bold;
+    font-size: $font-lg;
+    margin-bottom: 10px;
+}

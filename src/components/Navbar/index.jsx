@@ -5,16 +5,29 @@ import { FaInstagram } from "react-icons/fa";
 function index() {
   return (
     <nav className='navbar'>
+
       <div>
-        <button className='main-button'><Link to="/expert">Uzmanımı Bul</Link></button>
-        <button className='main-button'><Link to="/therapy">Bana Uygun Destek Türünü Bul</Link></button>
-        <button className='main-button'><Link to="/appointment">Randevu Al</Link></button>
+        <Link className='main-button' to="/expert">
+        Uzmanımı Bul
+        </Link>
+
+        <Link className='main-button' to="/therapy">
+        Bana Uygun Destek Türünü Bul
+        </Link>
+
+        <Link className='main-button' to="/appointment">
+        Randevu Al</Link>
       </div>
 
       <div>
-      <FaInstagram size={35} />
-      <button className='link-button' ><Link to="/">Anasayfa</Link>
-      </button>
+      <Link className='link-button' 
+      to="/">
+        Anasayfa
+      </Link>
+      
+      <FaInstagram className='navbar-icon' 
+      size={35} />
+      
       </div>
     </nav>
   )

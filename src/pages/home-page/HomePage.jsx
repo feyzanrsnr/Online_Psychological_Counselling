@@ -7,6 +7,7 @@ import Options from '../../components/Options'
 import Faqs from '../../components/Faqs'
 import Footer from '../../components/Footer'
 
+
 import useBreakpoint from '../../hooks/useBreakpoint'
 
 function HomePage() {
@@ -21,8 +22,9 @@ function HomePage() {
     }
 
     <Home/>
-    <Experts/>
+    
     <Options/>
+    <Experts/>
     <Faqs/>
     <Footer/>
     </>

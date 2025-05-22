@@ -1,20 +1,38 @@
 .navbar{
     position: fixed;
+    z-index: 2;
+    top: 0;
     width: 100vw;
-    background-color: $khaki;
     color:$cream;
-    font-size:$font-xl;
-    height: 120px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: $space-lg;
-    padding-right: $space-lg;
+    padding-right: $space-xl;
+
+    background: linear-gradient(
+    180deg,
+    hsl(75deg 10% 40%) 0%,
+    hsl(72deg 9% 44%) 23%,
+    hsl(69deg 9% 48%) 83%,
+    hsl(66deg 9% 52%) 96%,
+    hsl(63deg 10% 56%) 100%,
+    hsl(60deg 12% 60%) 100%);
 
 
     & div{
         display: flex;
         gap:$space-xl;
+        align-items: center;
+        justify-content: center;
+
+        & .navbar-icon{
+           cursor: pointer; 
+           &:hover{
+            scale:(1.2);
+           }
+        }
     }
 
 }
