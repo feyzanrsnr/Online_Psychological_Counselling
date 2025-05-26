@@ -10,6 +10,22 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
+    height: 100vh;
+
+   
+}
+
+.mainForm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 80%;
+
+      @media(max-width: 768px){
+        flex-direction: column;
+        
+    }
+
 }
 
 .form{
@@ -17,12 +33,16 @@
     flex-direction: column;
     color: $brown;
     margin-top: 150px;
-    width: 50%;
+    width: 40%;
+    
+     @media(max-width: 768px){
+        width: 100%;
+    }
 }
 
 .form > input, textarea {
     background-color: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $brown;
     margin-bottom: 20px;
 
     &:focus{
@@ -37,4 +57,65 @@
     font-weight: bold;
     font-size: $font-lg;
     margin-bottom: 10px;
+}
+
+.form-title{
+    color: $brown;
+    font-size: x-large;
+    padding-bottom: $space-lg;
+}
+
+input[type="date"] {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid $brown;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: $brown;
+}
+
+.select-input{
+    background-color: transparent;
+    border: 1px solid $brown;
+    padding: 7px 5px;
+    width: 70%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.datepicker-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.date-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 250px;
+}
+
+.date-input-wrapper input {
+  width: 100%;
+  padding-right: 2.5rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  color: #666;
+  pointer-events: none;
 }
